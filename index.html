@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Balance Withdrawal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>ubax</p>
-    <p>ibrahim</p>
+    <div class="container">
+        <div class="card">
+            <h2>Balance Withdrawal</h2>
+            <div class="balance-info">
+                <h3>Current Balance</h3>
+                <p class="balance">$1000.00</p>
+            </div>
+            <form id="withdrawalForm">
+                <div class="form-group">
+                    <label for="amount">Withdrawal Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="account">Account Number</label>
+                    <input type="text" id="account" name="account" placeholder="Enter account number" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description (Optional)</label>
+                    <input type="text" id="description" name="description" placeholder="Enter description">
+                </div>
+                <button type="submit" class="btn-withdraw">Withdraw</button>
+            </form>
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,5 +1,124 @@
-body{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.balance-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.balance-info h3 {
+    color: #5f6368;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.balance {
+    color: #1a73e8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5f6368;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+.btn-withdraw {
+    width: 100%;
+    padding: 12px;
+    background: #1a73e8;
     color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-withdraw:hover {
+    background: #1557b0;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    display: none;
+}
+
+.message.success {
+    display: block;
+    background: #e6f4ea;
+    color: #1e8e3e;
+}
+
+.message.error {
+    display: block;
+    background: #fce8e6;
+    color: #d93025;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
     
+    .card {
+        padding: 20px;
+    }
 }
